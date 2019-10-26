@@ -1,10 +1,18 @@
 import React from 'react';
-import './styles/App.scss';
+import NavbarMenu from './components/NavbarMenu';
+import MainInfo from './components/MainInfo';
+import TextInfo from './components/TextInfo';
 
 const App = () => {
   
   return (
     <div>
+      <NavbarMenu/>
+      <div className="container">
+        <MainInfo/>
+        <TextInfo/>
+      </div>
+      
     </div>
   );
 }

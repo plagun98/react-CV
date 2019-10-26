@@ -1,4 +1,65 @@
 body{
-    height: 100px;
-    background: linear-gradient(to bottom, white, black);
+    background: aliceblue;
+}
+
+#home{
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#main-info{
+    margin-top: 10rem;
+}
+
+.main-info{
+    &__title{
+        font-size: 4rem;
+    }
+    &__text{
+        font-size: 2rem
+    }
+    &__list{
+        padding: 1.5rem 0;
+        li{
+            line-height: 3rem;
+            *{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.main-info-body{
+    padding: 2rem 5rem;
+    background: #009999;
+    height: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.right-side{
+    transform: skewX(25deg);
+    background: #fff;
+    margin-left: -10%;
+    position: relative;
+    margin-bottom: -1px;
+    img{
+        position: absolute;
+        right: -28%;
+        bottom: 0;
+        transform: skewX(-25deg);
+    }
+}
+
+.social-links{
+    svg{
+        font-size: 3rem;
+        margin-left: 1.5rem;
+    }
 }
