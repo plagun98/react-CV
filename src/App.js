@@ -2,7 +2,8 @@ import React from 'react';
 import NavbarMenu from './components/NavbarMenu';
 import MainInfo from './components/MainInfo';
 import TextInfo from './components/TextInfo';
-import SectionCV from './components/SectionCV';
+import SectionEducation from './components/SectionCV';
+import SectionPortfolio from './components/SectionPortfolio';
 
 const App = () => {
   
@@ -12,7 +13,8 @@ const App = () => {
       <div className="container">
         <MainInfo/>
         <TextInfo/>
-        <SectionCV/>
+        <SectionEducation/>
+        <SectionPortfolio/>
       </div>
       
     </div>
