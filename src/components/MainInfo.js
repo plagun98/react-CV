@@ -24,10 +24,10 @@ const MainInfo = (props) => {
                                 <li className="main-info__text"><FontAwesomeIcon icon={faMapPin}/>Kyiv, Ukraine</li>
                             </ul>
                             <Row className="social-links">
-                                <a href="https://www.linkedin.com/in/александр-плагун-a021a7170/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-                                <a href="https://www.instagram.com/alexandr_plagun/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
-                                <a href="https://t.me/AlexPlg" target="_blank"><FontAwesomeIcon icon={faTelegramPlane}/></a>
-                                <a href="https://github.com/plagun98" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
+                                <a href="https://www.linkedin.com/in/александр-плагун-a021a7170/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                                <a href="https://www.instagram.com/alexandr_plagun/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
+                                <a href="https://t.me/AlexPlg" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTelegramPlane}/></a>
+                                <a href="https://github.com/plagun98" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
                             </Row>
                         </CardBody>
                     </Col>

@@ -10,7 +10,7 @@ body{
 }
 
 #main-info{
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .main-info{
@@ -61,5 +61,43 @@ body{
     svg{
         font-size: 3rem;
         margin-left: 1.5rem;
+    }
+}
+
+#text-info{
+    margin-top: 5rem;
+}
+
+.text-info-card{
+    padding: 4rem;
+    p{
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+}
+
+.button{
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background: #009999;
+}
+
+.bottom-card{
+    padding: 2rem 0;
+}
+
+.section{
+    margin-top: 5rem;
+}
+
+.section-header{
+    justify-content: center;
+    h2{
+        line-height: 6.4rem;
+        font-size: 3rem;
+        padding-left: 1rem;
+        text-transform: uppercase;
     }
 }
