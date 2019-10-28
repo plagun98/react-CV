@@ -118,5 +118,10 @@ form {
 
 .btn {
   font-size: 1.8rem;
-  width: 100%;
   background: #009999; }
+
+.submit-button {
+  width: 100%; }
+
+.contacts {
+  padding-bottom: 4rem; }

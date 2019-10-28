@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button, Form, FormGroup, Input, Row, Col } from 'reactstrap';
+import { Button, Form, FormGroup, Input, Row, Col, Alert } from 'reactstrap';
 import SectionHeader from './SectionHeader';
 
 const SectionContacts = () => {
@@ -13,14 +13,35 @@ const SectionContacts = () => {
     });
 
     const [sendingData, setSendingData] = useState({
-        mailSent: false,
-        error: null 
+        mailSent: null
     });
+
+    const [visible, setVisible] = useState(true);
+
+    const onDismiss = () => setVisible(false);
 
     const formHandler = e => {
         e.preventDefault();
 
-        console.log(formData);
+        const token = "764000482:AAH79WOgmyDmmWAgLuB8vc2p31p0sTCmQZY";
+        const chat_id = "369395946";
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(this.readyState === 4){
+                if(this.response.status === 200){
+                    setSendingData({mailSent: true});
+                    setFormData({
+                        name: '',
+                        email: '',
+                        message: ''
+                    });
+                } else {
+                    setSendingData({mailSent: false});
+                  }
+            } 
+        }
+        xhr.open('POST','https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html&text=' + JSON.stringify(formData), true);
+        xhr.send();
     }
 
     const handleInput = (e) => {
@@ -30,12 +51,28 @@ const SectionContacts = () => {
         })
     }
 
+    const renderSendingResult = () => {
+        if(sendingData.mailSent){
+            return(
+                <Alert color="success" isOpen={visible} toggle={onDismiss}>
+                    Message sent successfully!
+                </Alert>
+            )
+        } else if (sendingData.mailSent === false) {
+            return(
+                <Alert color="warning" isOpen={visible} toggle={onDismiss}>
+                    Something went wrong!
+                </Alert>
+            )
+        }
+    }
+
     return (
-        <div className="section">
+        <div className="section contacts">
             <SectionHeader imagePath={contactLogo} sectionTitle="Contact me"/>
             <Row>
                 <Col md={{size: 8, offset: 2}}>
-                    <Form onSubmit={formHandler} action="/send.php" method="post" >
+                    <Form onSubmit={formHandler} action="#" method="post" >
                         <FormGroup>
                             {/* <Label for="user-name">Name</Label> */}
                             <Input type="text"  name="name" id="user-name" placeholder="Name" value={formData.name} onChange={handleInput} required />
@@ -48,8 +85,9 @@ const SectionContacts = () => {
                             {/* <Label for="exampleText">Text Area</Label> */}
                             <Input type="textarea" name="message" id="user-message" placeholder="Message" value={formData.message} onChange={handleInput} required />
                         </FormGroup>
-                        <Button type="submit" name="submit" value="Submit">Submit</Button>
+                        <Button className="submit-button" type="submit" name="submit" value="Submit">Submit</Button>
                     </Form>
+                    {renderSendingResult()}
                 </Col>
             </Row>
         </div>

@@ -149,6 +149,18 @@ form{
 
 .btn{
     font-size: 1.8rem;
-    width: 100%;
     background: $main-color;
+}
+
+.submit-button{
+    width: 100%;
+}
+
+.contacts{
+    padding-bottom: 4rem;
+}
+
+.alert{
+    margin-top: 2rem;
+    font-size: 1.8rem;
 }
