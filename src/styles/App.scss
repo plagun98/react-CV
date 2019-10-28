@@ -1,3 +1,5 @@
+$main-color: #009999;
+
 body{
     background: aliceblue;
 }
@@ -33,7 +35,7 @@ body{
 
 .main-info-body{
     padding: 2rem 5rem;
-    background: #009999;
+    background: $main-color;
     height: 100%;
     color: #fff;
     text-shadow: 1px 1px 2px black;
@@ -81,7 +83,7 @@ body{
     display: block;
     margin: 0 auto;
     width: 60%;
-    background: #009999;
+    background: $main-color;
 }
 
 .bottom-card{
@@ -126,4 +128,27 @@ body{
         font-size: 2rem;
         padding-bottom: 2rem;
     }
+}
+
+#user-message{
+    resize: none;
+}
+
+form{
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 0.5rem;
+}
+
+.form-group{
+    *{
+        font-size: 1.8rem;
+    }
+}
+
+.btn{
+    font-size: 1.8rem;
+    width: 100%;
+    background: $main-color;
 }

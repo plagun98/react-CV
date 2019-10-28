@@ -20,7 +20,7 @@ const SectionPortfolio = () => {
             <PortfolioItem link="http://portfolio-project2.kl.com.ua" website="portfolio-project2" imagePath={portfolio2Path}/>
             <PortfolioItem link="https://portfolio-project3.000webhostapp.com" website="portfolio-project3" imagePath={portfolio3Path}/>
         </div>
-  );
+    );
 }
 
 export default SectionPortfolio;

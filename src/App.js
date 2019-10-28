@@ -4,6 +4,7 @@ import MainInfo from './components/MainInfo';
 import TextInfo from './components/TextInfo';
 import SectionEducation from './components/SectionCV';
 import SectionPortfolio from './components/SectionPortfolio';
+import SectionContacts from './components/ContactForm';
 
 const App = () => {
   
@@ -15,6 +16,7 @@ const App = () => {
         <TextInfo/>
         <SectionEducation/>
         <SectionPortfolio/>
+        <SectionContacts/>
       </div>
       
     </div>
