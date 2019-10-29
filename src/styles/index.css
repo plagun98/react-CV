@@ -50,4 +50,12 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 5px; }
+  font-size: 10px; }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 9px; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px; } }

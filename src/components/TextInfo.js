@@ -18,8 +18,8 @@ const TextInfo = (props) => {
                 </Card>
                 <Card className="bottom-card">
                     <Row>
-                        <Col><Button className="button">Download CV</Button></Col>
-                        <Col><Button className="button">Contact me</Button></Col>
+                        <Col md={{size: 3, offset: 3}} xs={{size: 5, offset: 1}}><Button className="button">Download CV</Button></Col>
+                        <Col md="3" xs="5"><Button className="button">Contact me</Button></Col>
                     </Row>
                 </Card>
             </Col>

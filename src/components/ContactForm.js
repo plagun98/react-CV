@@ -26,7 +26,7 @@ const SectionContacts = () => {
         const token = "764000482:AAH79WOgmyDmmWAgLuB8vc2p31p0sTCmQZY";
         const chat_id = "369395946";
         let letter = "User: " + formData.name + "; Email: " + formData.email + "; Message: " + formData.message;
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         let resp;
         xhr.onreadystatechange = function(){
             if(this.readyState === 4){
@@ -75,7 +75,7 @@ const SectionContacts = () => {
         <div className="section contacts">
             <SectionHeader imagePath={contactLogo} sectionTitle="Contact me"/>
             <Row>
-                <Col md={{size: 8, offset: 2}}>
+                <Col lg={{size: 8, offset: 2}} md={{size: 10, offset: 1}} sm={{size: 12, offset: 0}}>
                     <Form onSubmit={formHandler} action="#" method="post" >
                         <FormGroup>
                             {/* <Label for="user-name">Name</Label> */}

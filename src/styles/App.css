@@ -5,7 +5,9 @@ body {
   font-size: 2rem;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1000;
+  width: 100%; }
 
 .section {
   margin-top: 5rem; }
@@ -13,11 +15,12 @@ body {
 .section-header {
   justify-content: center;
   margin-bottom: 4rem; }
-  .section-header h2 {
-    line-height: 6.4rem;
-    font-size: 3rem;
-    padding-left: 1rem;
-    text-transform: uppercase; }
+
+.section-header h2 {
+  line-height: 6.4rem;
+  font-size: 3rem;
+  padding-left: 1rem;
+  text-transform: uppercase; }
 
 #main-info {
   margin-top: 7rem; }
@@ -30,10 +33,12 @@ body {
 
 .main-info__list {
   padding: 1.5rem 0; }
-  .main-info__list li {
-    line-height: 3rem; }
-    .main-info__list li * {
-      margin-right: 10px; }
+
+.main-info__list li {
+  line-height: 3rem; }
+
+.main-info__list li * {
+  margin-right: 10px; }
 
 .main-info-body {
   padding: 2rem 5rem;
@@ -51,11 +56,12 @@ body {
   margin-left: -10%;
   position: relative;
   margin-bottom: -1px; }
-  .right-side img {
-    position: absolute;
-    right: -28%;
-    bottom: 0;
-    transform: skewX(-25deg); }
+
+.right-side img {
+  position: absolute;
+  right: -28%;
+  bottom: 0;
+  transform: skewX(-25deg); }
 
 .social-links svg {
   font-size: 3rem;
@@ -66,9 +72,10 @@ body {
 
 .text-info-card {
   padding: 4rem; }
-  .text-info-card p {
-    font-size: 1.6rem;
-    line-height: 1.2; }
+
+.text-info-card p {
+  font-size: 1.6rem;
+  line-height: 1.2; }
 
 .button {
   font-size: 1.4rem;
