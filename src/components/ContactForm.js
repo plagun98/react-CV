@@ -25,10 +25,14 @@ const SectionContacts = () => {
 
         const token = "764000482:AAH79WOgmyDmmWAgLuB8vc2p31p0sTCmQZY";
         const chat_id = "369395946";
-        let xhr = new XMLHttpRequest();
+        let letter = "User: " + formData.name + "; Email: " + formData.email + "; Message: " + formData.message;
+        var xhr = new XMLHttpRequest();
+        let resp;
         xhr.onreadystatechange = function(){
             if(this.readyState === 4){
-                if(this.response.status === 200){
+                resp = JSON.parse(this.response);
+                console.log(resp);
+                if(resp.ok){
                     setSendingData({mailSent: true});
                     setFormData({
                         name: '',
@@ -37,10 +41,10 @@ const SectionContacts = () => {
                     });
                 } else {
                     setSendingData({mailSent: false});
-                  }
+                }
             } 
         }
-        xhr.open('POST','https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html&text=' + JSON.stringify(formData), true);
+        xhr.open('POST','https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html&text=' + letter, true);
         xhr.send();
     }
 

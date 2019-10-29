@@ -7,6 +7,18 @@ body {
   top: 0;
   left: 0; }
 
+.section {
+  margin-top: 5rem; }
+
+.section-header {
+  justify-content: center;
+  margin-bottom: 4rem; }
+  .section-header h2 {
+    line-height: 6.4rem;
+    font-size: 3rem;
+    padding-left: 1rem;
+    text-transform: uppercase; }
+
 #main-info {
   margin-top: 7rem; }
 
@@ -18,12 +30,10 @@ body {
 
 .main-info__list {
   padding: 1.5rem 0; }
-
-.main-info__list li {
-  line-height: 3rem; }
-
-.main-info__list li * {
-  margin-right: 10px; }
+  .main-info__list li {
+    line-height: 3rem; }
+    .main-info__list li * {
+      margin-right: 10px; }
 
 .main-info-body {
   padding: 2rem 5rem;
@@ -41,12 +51,11 @@ body {
   margin-left: -10%;
   position: relative;
   margin-bottom: -1px; }
-
-.right-side img {
-  position: absolute;
-  right: -28%;
-  bottom: 0;
-  transform: skewX(-25deg); }
+  .right-side img {
+    position: absolute;
+    right: -28%;
+    bottom: 0;
+    transform: skewX(-25deg); }
 
 .social-links svg {
   font-size: 3rem;
@@ -57,10 +66,9 @@ body {
 
 .text-info-card {
   padding: 4rem; }
-
-.text-info-card p {
-  font-size: 1.6rem;
-  line-height: 1.2; }
+  .text-info-card p {
+    font-size: 1.6rem;
+    line-height: 1.2; }
 
 .button {
   font-size: 1.4rem;
@@ -72,22 +80,10 @@ body {
 .bottom-card {
   padding: 2rem 0; }
 
-.section {
-  margin-top: 5rem; }
-
-.section-header {
-  justify-content: center;
-  margin-bottom: 4rem; }
-
-.section-header h2 {
-  line-height: 6.4rem;
-  font-size: 3rem;
-  padding-left: 1rem;
-  text-transform: uppercase; }
-
 .education-item img {
-  max-height: 350px;
+  max-height: 35rem;
   width: auto;
+  max-width: 100%;
   display: block;
   margin: 0 auto; }
 
@@ -95,6 +91,14 @@ body {
   padding-top: 1rem;
   font-size: 2rem;
   text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .education-item img {
+    max-height: 30rem; } }
+
+@media screen and (max-width: 992px) {
+  .education-item img {
+    max-height: 22rem; } }
 
 .portfolio-item img {
   max-width: 100%;
@@ -125,3 +129,7 @@ form {
 
 .contacts {
   padding-bottom: 4rem; }
+
+.alert {
+  margin-top: 2rem;
+  font-size: 1.8rem; }

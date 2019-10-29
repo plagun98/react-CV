@@ -11,85 +11,6 @@ body{
     left: 0;
 }
 
-#main-info{
-    margin-top: 7rem;
-}
-
-.main-info{
-    &__title{
-        font-size: 4rem;
-    }
-    &__text{
-        font-size: 2rem
-    }
-    &__list{
-        padding: 1.5rem 0;
-        li{
-            line-height: 3rem;
-            *{
-                margin-right: 10px;
-            }
-        }
-    }
-}
-
-.main-info-body{
-    padding: 2rem 5rem;
-    background: $main-color;
-    height: 100%;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-}
-
-.card{
-    overflow: hidden;
-}
-
-.right-side{
-    transform: skewX(25deg);
-    background: #fff;
-    margin-left: -10%;
-    position: relative;
-    margin-bottom: -1px;
-    img{
-        position: absolute;
-        right: -28%;
-        bottom: 0;
-        transform: skewX(-25deg);
-    }
-}
-
-.social-links{
-    svg{
-        font-size: 3rem;
-        margin-left: 1.5rem;
-    }
-}
-
-#text-info{
-    margin-top: 5rem;
-}
-
-.text-info-card{
-    padding: 4rem;
-    p{
-        font-size: 1.6rem;
-        line-height: 1.2;
-    }
-}
-
-.button{
-    font-size: 1.4rem;
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-    background: $main-color;
-}
-
-.bottom-card{
-    padding: 2rem 0;
-}
-
 .section{
     margin-top: 5rem;
 }
@@ -105,62 +26,8 @@ body{
     }
 }
 
-.education-item{
-    img{
-        max-height: 350px;
-        width: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    h3{
-        padding-top: 1rem;
-        font-size: 2rem;
-        text-align: center;
-    }
-} 
-
-.portfolio-item{
-    img{
-        max-width: 100%;
-        padding-bottom: 5rem;
-    }
-    a{
-        font-size: 2rem;
-        padding-bottom: 2rem;
-    }
-}
-
-#user-message{
-    resize: none;
-}
-
-form{
-    background: #fff;
-    padding: 3rem;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
-    border-radius: 0.5rem;
-}
-
-.form-group{
-    *{
-        font-size: 1.8rem;
-    }
-}
-
-.btn{
-    font-size: 1.8rem;
-    background: $main-color;
-}
-
-.submit-button{
-    width: 100%;
-}
-
-.contacts{
-    padding-bottom: 4rem;
-}
-
-.alert{
-    margin-top: 2rem;
-    font-size: 1.8rem;
-}
+@import '_main-info';
+@import '_text-info';
+@import '_education';
+@import '_portfolio';
+@import '_contact';

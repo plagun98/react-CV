@@ -1,0 +1,24 @@
+.education-item{
+    img{
+        max-height: 35rem;
+        width: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        padding-top: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+} 
+@media screen and (max-width: 1200px){
+    .education-item img{
+        max-height: 30rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .education-item img{
+        max-height: 22rem;
+    }
+}

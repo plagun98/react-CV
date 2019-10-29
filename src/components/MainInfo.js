@@ -10,7 +10,7 @@ const MainInfo = (props) => {
   return (
     <div id="main-info">
         <Row>
-            <Col lg={{size: 8, offset: 2}} md={{size: 12, offset: 0}}>
+            <Col xl={{size: 8, offset: 2}} lg={{size: 10, offset: 1}} md={{size: 12, offset: 0}}>
             <Card>
                 <Row className="no-gutters">
                     <Col md="8">
