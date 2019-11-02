@@ -59,3 +59,11 @@ html {
 @media screen and (max-width: 768px) {
   html {
     font-size: 7px; } }
+
+@media screen and (max-width: 525px) {
+  html {
+    font-size: 6px; } }
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 5px; } }

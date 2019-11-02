@@ -75,7 +75,7 @@ const SectionContacts = () => {
         <div className="section contacts">
             <SectionHeader imagePath={contactLogo} sectionTitle="Contact me"/>
             <Row>
-                <Col lg={{size: 8, offset: 2}} md={{size: 10, offset: 1}} sm={{size: 12, offset: 0}}>
+                <Col lg={{size: 8, offset: 2}} md={{size: 10, offset: 1}} sm={{size: 12, offset: 0}} xs={{size: 10, offset: 1}}>
                     <Form onSubmit={formHandler} action="#" method="post" >
                         <FormGroup>
                             {/* <Label for="user-name">Name</Label> */}

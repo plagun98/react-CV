@@ -1,14 +1,6 @@
 body {
   background: aliceblue; }
 
-#home {
-  font-size: 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%; }
-
 .section {
   margin-top: 5rem; }
 
@@ -21,6 +13,37 @@ body {
   font-size: 3rem;
   padding-left: 1rem;
   text-transform: uppercase; }
+
+@media screen and (max-width: 992px) {
+  .section-header img {
+    max-height: 57.6px; } }
+
+@media screen and (max-width: 768px) {
+  .section-header img {
+    max-height: 44.8px; } }
+
+@media screen and (max-width: 525px) {
+  .section-header img {
+    max-height: 38.4px; } }
+
+@media screen and (max-width: 470px) {
+  .section-header img {
+    max-height: 32px; } }
+
+#home {
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; }
+
+@media screen and (max-width: 900px) {
+  #home {
+    background: rgba(0, 0, 0, 0.6); }
+  #home a {
+    color: #dfdfdf;
+    text-shadow: 1px 1px 2px black; } }
 
 #main-info {
   margin-top: 7rem; }
@@ -81,7 +104,7 @@ body {
   font-size: 1.4rem;
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   background: #009999; }
 
 .bottom-card {
@@ -114,6 +137,10 @@ body {
 .portfolio-item a {
   font-size: 2rem;
   padding-bottom: 2rem; }
+
+@media screen and (max-width: 576px) {
+  .education-item {
+    padding-bottom: 20px; } }
 
 #user-message {
   resize: none; }

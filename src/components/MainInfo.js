@@ -13,7 +13,7 @@ const MainInfo = (props) => {
             <Col xl={{size: 8, offset: 2}} lg={{size: 10, offset: 1}} md={{size: 12, offset: 0}}>
             <Card>
                 <Row className="no-gutters">
-                    <Col sm="8">
+                    <Col sm="8" xs="8">
                         <CardBody className="main-info-body">
                             <h2 className="main-info__title">Plahun Aleksandr</h2>
                             <h3 className="main-info__text">Junior Front-end developer</h3>
@@ -31,7 +31,7 @@ const MainInfo = (props) => {
                             </Row>
                         </CardBody>
                     </Col>
-                    <Col className="right-side" sm="4">
+                    <Col className="right-side" sm="4" xs="4">
                         <CardImg src={require("../img/profile.jpg")} alt="Card image cap" />
                     </Col>
                 </Row>

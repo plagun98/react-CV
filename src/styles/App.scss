@@ -19,6 +19,30 @@ body{
     }
 }
 
+@media screen and (max-width: 992px){
+    .section-header img{
+        max-height: 64px * 0.9;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .section-header img{
+        max-height: 64px * 0.7;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .section-header img{
+        max-height: 64px * 0.6;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .section-header img{
+        max-height: 64px * 0.5;
+    }
+}
+
 @import '_navigation';
 @import '_main-info';
 @import '_text-info';
