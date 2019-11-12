@@ -24,7 +24,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   color: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  scroll-behavior: smooth; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -67,3 +68,7 @@ html {
 @media screen and (max-width: 470px) {
   html {
     font-size: 5px; } }
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 4px; } }

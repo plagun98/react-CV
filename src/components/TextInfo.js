@@ -11,15 +11,13 @@ const TextInfo = (props) => {
                 <Card className="text-info-card">
                     <div>
                         <p>Hello! I am junior front-end developer in Kyiv and I am interested to get full or part time job.
-                            My professional skills: strong knowledge of HTML5/CSS3, basic knowledge of Javascript, jQuery, Ajax, plugin integration, 
-                            crossbrowser and responsive coding. For website development I use Gulp, less, git, Zeplin. 
-                            Knowledge of foreign languages: English - intermediate, German - beginner.</p>
+                             The main goal for me now is to get more working experience and to improve my programming skills. </p>
                     </div>
                 </Card>
                 <Card className="bottom-card">
                     <Row>
-                        <Col md={{size: 3, offset: 3}} xs={{size: 5, offset: 1}}><Button className="button">Download CV</Button></Col>
-                        <Col md="3" xs="5"><Button className="button">Contact me</Button></Col>
+                        <Col md={{size: 3, offset: 3}} xs={{size: 5, offset: 1}}><Button href="https://resume.io/r/eW5Enechf" target="_blank" rel="noopener noreferrer" className="button">Watch CV</Button></Col>
+                        <Col md="3" xs="5"><Button href="#contacts" className="button">Contact me</Button></Col>
                     </Row>
                 </Card>
             </Col>

@@ -13,16 +13,13 @@ const NavbarMenu = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="#home">Home</NavLink>
+              <NavLink href="#main-info">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#education">Education</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#portfolio">Portfolio</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#interests">Interests</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#contacts">Contact me</NavLink>

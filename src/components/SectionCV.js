@@ -7,7 +7,7 @@ const SectionEducation = () => {
     const educationLogo = require('../img/graduate.png');
 
     return (
-        <div className="section">
+        <div id="education" className="section">
             <SectionHeader imagePath={educationLogo} sectionTitle="Education"/>
             <Row>
                 <Col sm={{size: 5, offset: 0}} className="education-item">

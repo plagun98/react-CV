@@ -30,6 +30,7 @@ time, mark, audio, video {
 	font: inherit;
 	color: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,30 +55,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@mixin fontSize ($width, $size){
+	@media screen and (max-width: $width){
+		font-size: $size;
+	}
+}
+
 html{
 	font-size: 10px;
-}
-
-@media screen and (max-width: 992px){
-	html{
-		font-size: 9px;
-	}
-}
-
-@media screen and (max-width: 768px){
-	html{
-		font-size: 7px;
-	}
-}
-
-@media screen and (max-width: 525px){
-	html{
-		font-size: 6px;
-	}
-}
-
-@media screen and (max-width: 470px){
-	html{
-		font-size: 5px;
-	}
+	@include fontSize(992px, 9px);
+	@include fontSize(768px, 7px);
+	@include fontSize(525px, 6px);
+	@include fontSize(470px, 5px);
+	@include fontSize(380px, 4px);
 }

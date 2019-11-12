@@ -12,7 +12,7 @@ const SectionPortfolio = () => {
     const portfolio3Path = require('../img/project3.png');
 
     return (
-        <div className="section">
+        <div id="portfolio" className="section">
             <SectionHeader imagePath={portfolioLogo} sectionTitle="Portfolio"/>
             <PortfolioItem link="https://aquazis.com/landing" website="Aquazis.com" imagePath={aquazisPath}/>
             <PortfolioItem link="https://aquaplanner.com.ua" website="Aquaplanner.com.ua" imagePath={aquaplannerPath}/>

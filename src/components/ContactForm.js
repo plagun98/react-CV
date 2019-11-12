@@ -72,7 +72,7 @@ const SectionContacts = () => {
     }
 
     return (
-        <div className="section contacts">
+        <div id="contacts" className="section contacts">
             <SectionHeader imagePath={contactLogo} sectionTitle="Contact me"/>
             <Row>
                 <Col lg={{size: 8, offset: 2}} md={{size: 10, offset: 1}} sm={{size: 12, offset: 0}} xs={{size: 10, offset: 1}}>
